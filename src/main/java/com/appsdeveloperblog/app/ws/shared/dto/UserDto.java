@@ -1,6 +1,7 @@
 package com.appsdeveloperblog.app.ws.shared.dto;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class UserDto implements Serializable {
     private static final long serialVersionUID = 6835192601898364280L;
@@ -12,7 +13,8 @@ public class UserDto implements Serializable {
     private String password;
     private String encryptedPassword;
     private String emailVerificationToken;
-    private Boolean emailVerificationStatus;
+    private Boolean emailVerificationStatus = false;
+
 
     public long getId() {
         return id;
